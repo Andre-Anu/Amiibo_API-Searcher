@@ -1,0 +1,14 @@
+.root{
+    -fx-background-image: url("images/1.jpg");
+    -fx-background-size: cover;
+}
+
+#dateLabel{
+    -fx-background-color: transparent;
+    -fx-font: bold 10pt "Arial";
+
+}
+#listView{
+    -fx-font: bold 9pt "Arial";
+
+}

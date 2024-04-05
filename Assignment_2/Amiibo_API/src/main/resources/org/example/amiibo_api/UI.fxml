@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1105.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.amiibo_api.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="66.0" layoutY="14.0" prefHeight="30.0" prefWidth="192.0" text="Amiibo Figures!" textAlignment="CENTER" textFill="#ffc800" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <GridPane fx:id="gridPlane" alignment="CENTER" layoutX="745.0" layoutY="14.0" prefHeight="548.0" prefWidth="338.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.33341471354166" minWidth="10.0" prefWidth="109.33333333333334" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.33329264322913" minWidth="10.0" prefWidth="229.33333333333337" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" maxHeight="77.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="118.0" prefWidth="135.0" text="Amiibo Series" textAlignment="CENTER" textFill="#ffc800" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="seriesLabel" alignment="CENTER" prefHeight="118.0" prefWidth="233.0" textAlignment="CENTER" textFill="#ffc800" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Label>
+            <Label prefHeight="118.0" prefWidth="129.0" text="Game Series" textAlignment="CENTER" textFill="#ffc800" wrapText="true" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="amiiboLabel" alignment="CENTER" prefHeight="134.0" prefWidth="229.0" textAlignment="CENTER" textFill="#ffc800" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Label>
+            <Label prefHeight="118.0" prefWidth="137.0" text="Amiibo Name" textAlignment="CENTER" textFill="#ffc800" wrapText="true" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="gameLabel" alignment="CENTER" prefHeight="128.0" prefWidth="229.0" textAlignment="CENTER" textFill="#ffc800" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Label>
+            <Label prefHeight="77.0" prefWidth="176.0" text="Release Date" textAlignment="CENTER" textFill="#ffc800" wrapText="true" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="characterLabel" alignment="CENTER" prefHeight="133.0" prefWidth="229.0" textAlignment="CENTER" textFill="#ffc800" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Label>
+            <Label prefHeight="132.0" prefWidth="109.0" text="Character Name" textAlignment="CENTER" textFill="#ffc800" wrapText="true" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <ListView fx:id="dateLabel" focusTraversable="false" maxHeight="77.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="54.95" right="54.95" />
+               </GridPane.margin>
+            </ListView>
+         </children>
+      </GridPane>
+      <HBox fx:id="hBox" alignment="CENTER" layoutX="14.0" layoutY="91.33333587646484" AnchorPane.bottomAnchor="14.666666666666686" AnchorPane.leftAnchor="13.666666666666742" AnchorPane.topAnchor="106.0">
+         <children>
+            <ListView fx:id="listView" prefHeight="455.0" prefWidth="300.0">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ListView>
+            <ImageView fx:id="imageView" fitHeight="485.0" fitWidth="675.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="66.0" layoutY="57.0" AnchorPane.topAnchor="57.0">
+         <children>
+            <TextField fx:id="searchTextField" alignment="CENTER" promptText="Game Series">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </TextField>
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchAmiibos" style="-fx-background-color: ffc800;" text="GO!">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
